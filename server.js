@@ -1,6 +1,6 @@
-const http = require('http');
+import { createServer } from 'node:http';
 
-const server = http.createServer((req,res)=>{
+const server = createServer((req,res)=>{
     res.end("Ola turma B");
 });
 

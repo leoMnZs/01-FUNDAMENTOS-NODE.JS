@@ -1,0 +1,16 @@
+Esse codigo cria um servidor web usando apenas o *Node.js*, sem usar framework 
+(Um framework é uma estrutura base pronta que serve como um esqueleto para criar 
+softwares, contendo códigos reutilizáveis, regras de organização e ferramentas para 
+acelerar o trabalho)
+
+Explicaçao do que o codigo faz:
+
+import { createServer } from 'node:http'; / Traz a ferramenta para criar servidores, do módulo nativo do Node.js
+
+createServer((req, res) => {...}) / Cria o servidor, definindo o que ele deve fazer quando alguém acessar
+
+res.end("Ola turma B") / Envia a resposta para quem acessou, com o texto "Ola turma B", e encerra a requisição
+
+server.listen(3000, '127.0.0.1', () => {...}) / Liga o servidor, fazendo ele "escutar" (ficar esperando acessos) na porta 3000, só no seu computador
+
+console.log("Servidor rodando em http://localhost:3000") / Mostra uma mensagem no terminal avisando que o servidor está funcionando
